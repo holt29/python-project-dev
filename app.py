@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Welcome to the PaaS project create Wizard. \n" "This is currently, not operational.I'm confused... 
+    return "Welcome to the PaaS project create Wizard. \n" "This is currently, not operational. I'm confused... 
     
     Did this do anything?"
 
