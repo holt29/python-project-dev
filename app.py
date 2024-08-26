@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     templateData = {}
-    return render_template('homepage.html')
+    return "A lot more training might be required"
 
 
 if __name__ == '__main__':
