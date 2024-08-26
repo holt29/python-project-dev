@@ -1,12 +1,13 @@
-from flask import Flask
-import os
+from flask import Flask, render_template, request
+import os import curdir
+import subprocess
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello():
     templateData = {}
-    return "A lot more training might be required"
+    return render_template(homepage.html)
 
 
 if __name__ == '__main__':
