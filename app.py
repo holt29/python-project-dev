@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from os import curdir
+import os
 import subprocess
 
 app = Flask(__name__)
