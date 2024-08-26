@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import os 
+from os import curdir
 import subprocess
 
 app = Flask(__name__)
@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     templateData = {}
-    return render_template(homepage.html)
+    return render_template('homepage.html')
 
 
 if __name__ == '__main__':
