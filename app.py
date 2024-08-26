@@ -5,9 +5,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Welcome to the PaaS project create Wizard.This is currently, not operational. I'm confused..."
-    
-    "Did this do anything?"
+    templateData = {}
+    return render_template('homepage.html')
+
 
 if __name__ == '__main__':
     port = os.environ.get('FLASK_PORT') or 8080
